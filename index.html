@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sneha Taru | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <header>
+    <nav>
+      <h1>Sneha Taru</h1>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><button id="toggleMode"><i class="fas fa-moon"></i></button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <h2>Hi, I'm <span class="highlight">Sneha Taru</span></h2>
+    <h3><span id="typing-text"></span></h3>
+    <a href="#contact" class="btn">Let's Connect</a>
+  </section>
+
+  <section id="about" class="about reveal">
+    <h2>About Me</h2>
+    <p>I’m a creative and curious computer engineer with a strong interest in front-end development and AI. I love solving problems and bringing ideas to life through code. I specialize in building responsive, accessible, and user-friendly web interfaces using HTML, CSS, JavaScript, and Python.</p>
+  </section>
+
+  <section id="projects" class="projects reveal">
+    <h2>Projects</h2>
+    <div class="project-list">
+      <div class="project card">
+        <h3>💰 Personal Finance Tracker</h3>
+        <p>Track your daily expenses, incomes, and view summary reports. Built using JS and localStorage.</p>
+        <a href="#">Live Demo</a> | <a href="#">GitHub</a>
+      </div>
+      <div class="project card">
+        <h3>😊 Facial Emotion Recognition</h3>
+        <p>AI-powered app that recognizes emotions from images using ML models.</p>
+        <a href="#">Live Demo</a> | <a href="#">GitHub</a>
+      </div>
+      <div class="project card">
+        <h3>🌐 Portfolio Website</h3>
+        <p>A personal portfolio to showcase my work and connect with the world.</p>
+        <a href="#">Live Demo</a> | <a href="#">GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="skills reveal">
+    <h2>Skills</h2>
+    <div class="skill-bar">
+      <label>HTML</label><div class="bar"><div style="width: 90%"></div></div>
+      <label>CSS</label><div class="bar"><div style="width: 85%"></div></div>
+      <label>JavaScript</label><div class="bar"><div style="width: 80%"></div></div>
+      <label>Python</label><div class="bar"><div style="width: 85%"></div></div>
+      <label>Machine Learning</label><div class="bar"><div style="width: 92%"></div></div>
+      <label>AI</label><div class="bar"><div style="width: 90%"></div></div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact reveal">
+    <h2>Contact Me</h2>
+    <form id="contact-form">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+    <p id="form-message"></p>
+    <p>Or email me directly: <a href="mailto:snehabtaru@gmail.com">snehabtaru@gmail.com</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Sneha Taru. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
